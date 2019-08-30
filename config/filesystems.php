@@ -55,6 +55,21 @@ return [
             'visibility' => 'public',
         ],
 
+        'qiniu' => [
+            'driver'                 => 'qiniu',
+            'domains'                => [
+                'default' => 'oss.ruirio.cn',   // 你的七牛域名
+                'https'   => 'oss.ruirio.cn',   // 你的HTTPS域名
+                'custom'  => '',
+            ],
+            'access_key'             => 'YG9G0lFIJp1cKpglRrgcUTesE_H2ckDO6QwsczB3',  // AccessKey
+            'secret_key'             => 'pR9dOsTmVsMSklZd7SiM1N6NyxWFh7AaqxRi_sqG',  // SecretKey
+            'bucket'                 => 'resource-bkt',  // Bucket名字
+            'notify_url'             => '/',  //持久化处理回调地址
+            'access'                 => 'public',  //空间访问控制 public 或 private
+            'hotlink_prevention_key' => '', // CDN 时间戳防盗链的 key。 设置为 null 则不启用本功能。
+        ],
+
         's3' => [
             'driver' => 's3',
             'key'    => env('AWS_KEY'),

@@ -122,6 +122,7 @@ class HomeController extends Controller
             $tags = Tag::has('pages')->withCount('pages')->orderBy('pages_count', 'desc')->get();
         }
 
+        redirect('http://www.askcode.club/project/1');die;
         return view('index', [
             'projects'   => $projects->appends([
                 'per_page' => $perPage,

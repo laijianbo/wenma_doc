@@ -121,8 +121,7 @@ class HomeController extends Controller
         if (empty($catalogId)) {
             $tags = Tag::has('pages')->withCount('pages')->orderBy('pages_count', 'desc')->get();
         }
-
-        redirect('http://www.askcode.club/project/1');die;
+        return redirect('project/1');
         return view('index', [
             'projects'   => $projects->appends([
                 'per_page' => $perPage,

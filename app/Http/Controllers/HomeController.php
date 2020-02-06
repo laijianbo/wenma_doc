@@ -42,8 +42,6 @@ class HomeController extends Controller
      */
     public function home(Request $request, $catalog = 0)
     {
-        redirect('/project/3?p=5');
-        die;
         $perPage   = (int)$request->input('per_page', 20);
         $name      = $request->input('name');
         $page      = (int)$request->input('page', 1);

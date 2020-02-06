@@ -62,8 +62,7 @@
     <footer class="footer">
         <div class="@yield('container-style')">
             <p>
-                &copy; {{ date('Y') }} {{ config('wizard.copyright', 'AICODE.CC') }}
-                <a class="fa fa-github" target="_blank" href="https://github.com/mylxsw/wizard"></a>
+                <a href="http://beian.miit.gov.cn/" target="_blank">蜀ICP备19038075号-1</a>
                 {!! statistics() !!}
             </p>
         </div>

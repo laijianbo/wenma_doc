@@ -121,7 +121,7 @@
 @endsection
 
 @push('script')
-    @if(!Auth::guest() && empty($name))
+{{--    @if(!Auth::guest() && empty($name))--}}
     <script src="/assets/vendor/moment-with-locales.min.js"></script>
     <script>
         $(function () {
@@ -161,7 +161,7 @@
 
         });
     </script>
-    @endif
+{{--    @endif--}}
 
     <script>
         $(function () {

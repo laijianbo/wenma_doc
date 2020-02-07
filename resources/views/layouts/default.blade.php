@@ -12,7 +12,8 @@
     <!-- 网站icon，来自于Google开源图标 -->
     <link rel="icon" type="image/png" href="/favorite.png">
 
-    <title>@yield('title') - {{ config('app.name', 'Wizard API') }}</title>
+{{--    <title>@yield('title') - {{ config('app.name', 'Wizard API') }}</title>--}}
+    <title>{{ config('app.name', 'Wizard API') }}</title>
 
     <link href="/assets/css/normalize.css" rel="stylesheet">
     <link href="/assets/css/tagmanager.css" rel="stylesheet">

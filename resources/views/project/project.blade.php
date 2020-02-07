@@ -159,7 +159,7 @@
 @push('page-panel')
 
     @if($pageID != 0 && !(Auth::guest() && count($pageItem->comments) === 0))
-        @include('components.comment')
+{{--        @include('components.comment')--}}
     @endif
 
     @if(!Auth::guest())

@@ -121,7 +121,6 @@ class HomeController extends Controller
         if (empty($catalogId)) {
             $tags = Tag::has('pages')->withCount('pages')->orderBy('pages_count', 'desc')->get();
         }
-        return redirect('project/1');
         return view('index', [
             'projects'   => $projects->appends([
                 'per_page' => $perPage,
